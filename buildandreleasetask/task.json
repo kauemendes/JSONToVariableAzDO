@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
-  "id": "fd89a7a2-3e2a-4880-893c-5c9d29d571a9",
+  "id": "e7f00f53-73c7-483a-b82a-a25253c72b69",
   "name": "JSONToVariablesAzDO",
   "friendlyName": "JSON To AzDO Environment Variables",
   "description": "Convert JSON files to Azure DevOps environment variables",
@@ -10,7 +10,7 @@
   "version": {
     "Major": 1,
     "Minor": 0,
-    "Patch": 0
+    "Patch": 9
   },
   "visibility": [
     "Build",
@@ -52,8 +52,17 @@
     }
   ],
   "execution": {
+    "Node": {
+      "target":"index.js"
+    },
+    "Node10": {
+      "target": "index.js"
+    },
+    "Node16": {
+      "target": "index.js"
+    },
     "Node20_1": {
-        "target": "index.js"
+      "target": "index.js"
     }
   }
 }

@@ -51,7 +51,7 @@ async function run() {
   try {
     const variablePrefix: string = tl.getInput("variablePrefix", false) || "";
     const variableFiles:string[] = await findFiles();
-    console.log(`[##info] Setting variables:`);
+    console.log(`[INFO] Setting variables:`);
     await Promise.all(variableFiles.map(async (variablePath) => {
       const variables: any = await getVariables(variablePath);
       const flattenedVariables = flattenObject(variables);
@@ -63,7 +63,7 @@ async function run() {
         if (typeof flattenedVariables[key] === 'boolean') {
           value = flattenedVariables[key].toString();
         }
-        console.log(`[##info] ${keyName} -> ${value}`);
+        console.log(`[INFO] ${keyName} -> ${value}`);
         tl.setVariable(keyName, value);
       });
     }));

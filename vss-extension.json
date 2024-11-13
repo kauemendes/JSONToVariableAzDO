@@ -1,11 +1,23 @@
 {
     "manifestVersion": 1,
-    "id": "build-release-task",
+    "id": "JsonToVar",
     "name": "KaueCode JSON to Variables",
-    "version": "1.0.4",
+    "version": "1.0.9",
     "publisher": "KaueFreitasCode",
     "description": "Tool for converting JSON files to Azure DevOps environment variables",
     "public": true,
+    "tags": [
+        "Extension",
+        "Install",
+        "Continuous Integration",
+        "Continuous Delivery",
+        "Azure Pipelines",
+        "Azure DevOps Extensions",
+        "Visual Studio Extensions",
+        "JSON",
+        "Variables",
+        "Convert"
+    ] ,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -24,7 +36,7 @@
     ],
     "contributions": [
         {
-            "id": "custom-build-release-task",
+            "id": "json-to-var",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
