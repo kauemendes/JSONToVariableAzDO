@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "fd89a7a2-3e2a-4880-893c-5c9d29d571a9",
+  "name": "JSONToVariablesAzDO",
+  "friendlyName": "JSON To AzDO Environment Variables",
+  "description": "Convert JSON files to Azure DevOps environment variables",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "Kaue Mendes @ Kaue Code 2024",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "demands": [
+    "npm"
+  ],
+  "minimumAgentVersion": "2.206.1",
+  "instanceNameFormat": "JSON to Variable",
+  "inputs": [
+    {
+      "name": "jsonFile",
+      "type": "filePath",
+      "label": "Location of JSON file",
+      "defaultValue": "$(Build.SourcesDirectory)",
+      "required": true,
+      "helpMarkDown": "Folder where json file(s) exist."
+    },
+    {
+      "name": "patternVariables",
+      "type": "multiLine",
+      "properties": {
+        "resizable": true,
+        "rows": "1"
+      },
+      "label": "Variable file(s)",
+      "defaultValue": "variable.json",
+      "required": false,
+      "helpMarkDown": "Specify the variable json files. One file per line."
+    },
+    {
+      "name": "variablePrefix",
+      "type": "string",
+      "label": "Concatenate a Prefix Value into Variables",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "Variable Prefix to concatenate into the variable name."
+    }
+  ],
+  "execution": {
+    "Node20_1": {
+        "target": "index.js"
+    }
+  }
+}

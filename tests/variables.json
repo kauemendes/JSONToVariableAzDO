@@ -1,0 +1,13 @@
+{
+    "Log": {
+        "Enabled": true,
+        "MinimumLevel": "Info",
+        "LogEngineEvents": true,
+        "Targets": {
+            "Console": {
+                "UseColors": false,
+                "SimpleFormat": false
+            }
+        }
+    }
+}

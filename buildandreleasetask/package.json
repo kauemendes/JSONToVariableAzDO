@@ -1,0 +1,13 @@
+{
+    "name": "json-to-azdo-variables",
+    "version": "1.0.0",
+    "description": "Package JsonToAzDOVariables",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Microsoft/azure-devops-extension-tasks.git"
+    },
+    "license": "GNUv3",
+    "dependencies": {
+      "azure-pipelines-task-lib": "^4.17.3"
+    }
+  }

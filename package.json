@@ -1,0 +1,25 @@
+{
+  "name": "jsontovariableazdo",
+  "version": "1.0.0",
+  "description": "JSONToVariableAzDO",
+  "main": "index.js",
+  "scripts": {
+    "package": "npm run clean  && npm run compile  && tfx extension create  --rev-version",
+    "gallery-publish": "tfx extension publish --rev-version",
+    "clean": "rm -rf ./*.vsix",
+    "compile": "tsc -p .",
+    "install-task-lib:buildandreleasetask": "cd buildandreleasetask && npm install --save-dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.17.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/node": "^22.9.0",
+    "@types/q": "^1.5.8",
+    "sync-request": "^6.1.0"
+  }
+}

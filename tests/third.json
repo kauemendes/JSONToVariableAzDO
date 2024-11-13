@@ -1,0 +1,30 @@
+{
+    "Applications": [
+      {
+        "Name": "m3df-basic-novo",
+        "ProjectName": "UserCategorisation.Host.Novo",
+        "ContractsProjectName": "UserCategorisation.App.Contracts.Novo",
+        "list": [
+            {
+                "Folk": "bar",
+                "xpto": "Novo"
+            }
+        ]
+      },
+      {
+        "Name": "m3df-basic",
+        "ProjectName": "UserCategorisation.Host",
+        "ContractsProjectName": "UserCategorisation.App.Contracts"
+      }
+    ],
+    "NugetPackageProjectNames": [],
+    "SkipTests": false,
+    "TestProjects": [
+      {
+        "Folder": "test/UserCategorisation.App.Test/",
+        "Settings": null,
+        "Skip": false
+      }
+    ]
+  }
+  
