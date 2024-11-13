@@ -1,6 +1,6 @@
 {
     "name": "json-to-azdo-variables",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Package JsonToAzDOVariables",
     "repository": {
       "type": "git",

@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "JsonToVar",
     "name": "KaueCode JSON to Variables",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "publisher": "KaueFreitasCode",
     "description": "Tool for converting JSON files to Azure DevOps environment variables",
     "public": true,

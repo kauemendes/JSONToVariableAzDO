@@ -2,7 +2,6 @@ import tl = require('azure-pipelines-task-lib/task');
 const fs = require('fs').promises;
 
 const findFiles = async () => {
-  console.log("Valor defaultworking", tl.getInput("System.DefaultWorkingDirectory"))
   const jsonFile = tl.getPathInputRequired("jsonFile", false) || `${tl.getInput("System.DefaultWorkingDirectory")}/variables.json` || "/variables.json";
   
   let patternVariables: string[];

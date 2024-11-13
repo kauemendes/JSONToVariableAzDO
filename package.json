@@ -1,6 +1,6 @@
 {
   "name": "jsontovariableazdo",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "JSONToVariableAzDO",
   "main": "index.js",
   "scripts": {
